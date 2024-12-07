@@ -95,7 +95,7 @@ console.log(userRecords);
 ## Testing
 Run the included test suite to validate the contract's functionality:
 `
-npx hardhat test
+npx hardhat test <br>
 `
 The tests cover:
 - Recording gas usage for various function calls.
