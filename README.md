@@ -103,3 +103,17 @@ npx hardhat test
 <li>Retrieving all gas records.</li>
 <li>Filtering gas records by user address.</li>
 </ul>
+
+## Example Output
+When `trackGas` is called, the contract stores and emits data like this:
+
+`````
+{
+  user: "0x123...",
+  functionName: "exampleFunction",
+  gasUsed: 21000
+}
+`````
+## Limitations
+- GasTracker only tracks gas usage for predefined logic within the trackGas function. It does not automatically measure other contract calls.
+- Designed for testing and optimization, not for production auditing.
