@@ -45,37 +45,50 @@ npm install
 
 <strong>Deploy to Local Hardhat Network</strong>
 1. Start a local Hardhat node:
+   
 ```````````````````
 npx hardhat node
 `````````````````
 2. Deploy the contract:
+
 ```````````````````````
 npx hardhat run scripts/deploy.ts --network localhost
 ``````````````````````
 
 <strong>Deploy to a Testnet (e.g., Goerli or Base)</strong>
+
 1. Add your private key and testnet RPC URL to `hardhat.config.ts.`
 2. Deploy to the testnet:
+
 ``````````````````
 npx hardhat run scripts/deploy.ts --network goerli
 ``````````````````
+
 ## Interacting with GasTracker
+
 <strong>Using Hardhat Console</strong>
 1. Attach to the deployed contract:
+
 ```````````````````````
 const GasTracker = await ethers.getContractFactory("GasTracker"); <br>
 const gasTracker = await GasTracker.attach("<DEPLOYED_CONTRACT_ADDRESS>");
 ```````````````````````
+
 2. Track gas for a function:
+
 ``````````````````````
 await gasTracker.trackGas("exampleFunction");
 `````````````````````
+
 3. Retrieve all gas records:
+
 ``````````````````````````
 const records = await gasTracker.getGasRecords(); <br>
 console.log(records);
 ````````````````````````````````
+
 4. Filter records by user:
+
 ``````````````````````````
 const userRecords = await gasTracker.getGasRecordsByUser("<USER_ADDRESS>"); <br>
 console.log(userRecords);
