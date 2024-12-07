@@ -44,18 +44,20 @@ npm install
 ## Deployment
 
 <strong>Deploy to Local Hardhat Network</strong>
+
 1. Start a local Hardhat node: <br>
 `npx hardhat node`
+
 2. Deploy the contract:
 
-```````````````````````
+`
 npx hardhat run scripts/deploy.ts --network localhost
-``````````````````````
+`
 
-<strong>Deploy to a Testnet (e.g., Goerli or Base)</strong>
+## Deploy to a Testnet (e.g., Goerli or Base)
 
 1. Add your private key and testnet RPC URL to `hardhat.config.ts.`
-2. Deploy to the testnet:
+2. Deploy to the testnet: 
 
 ``````````````````
 npx hardhat run scripts/deploy.ts --network goerli
