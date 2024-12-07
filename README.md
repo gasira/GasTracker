@@ -115,5 +115,5 @@ When `trackGas` is called, the contract stores and emits data like this:
 }
 `````
 ## Limitations
-- GasTracker only tracks gas usage for predefined logic within the trackGas function. It does not automatically measure other contract calls.
+- GasTracker only tracks gas usage for predefined logic within the `trackGas` function. It does not automatically measure other contract calls.
 - Designed for testing and optimization, not for production auditing.
