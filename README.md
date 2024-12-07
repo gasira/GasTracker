@@ -98,8 +98,8 @@ Run the included test suite to validate the contract's functionality: <br>
 npx hardhat test 
 `
 <h4>The tests cover:</h4>
-<ol>
+<ul>
  <li>Recording gas usage for various function calls.</li> 
 <li>Retrieving all gas records.</li>
 <li>Filtering gas records by user address.</li>
-</ol>
+</ul>
