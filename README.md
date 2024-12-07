@@ -75,9 +75,9 @@ const gasTracker = await GasTracker.attach("<DEPLOYED_CONTRACT_ADDRESS>");
 
 2. Track gas for a function:
 
-``````````````````````
+`
 await gasTracker.trackGas("exampleFunction");
-`````````````````````
+`
 
 3. Retrieve all gas records:
 
