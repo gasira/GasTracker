@@ -44,7 +44,7 @@ npm install
 ## Deployment
 
 <strong>Deploy to Local Hardhat Network</strong>
-1. Start a local Hardhat node:
+1. Start a local Hardhat node: <br>
 `npx hardhat node`
 2. Deploy the contract:
 
