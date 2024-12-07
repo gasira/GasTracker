@@ -93,10 +93,11 @@ const userRecords = await gasTracker.getGasRecordsByUser("<USER_ADDRESS>"); <br>
 console.log(userRecords);
 ``````````````````````````
 ## Testing
-Run the included test suite to validate the contract's functionality:
+Run the included test suite to validate the contract's functionality: <br>
 `
-npx hardhat test <br>
+npx hardhat test 
 `
+<br>
 The tests cover:
 - Recording gas usage for various function calls.
 - Retrieving all gas records.
